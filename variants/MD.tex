@@ -1,0 +1,253 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+\usepackage{paracol}
+
+\ifxetexorluatex
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\begin{document}
+\name{Hanafe Mira}
+\tagline{Software Engineer | Mobile App Development | Full-Stack | AI/ML}
+\photoR{2.8cm}{hanafe}
+
+\personalinfo{
+  \email{miraahanafee@gmail.com}
+  \phone{+94 76 381 1834}
+  \location{Colombo, Sri Lanka}
+  \linkedin{hanafe-mira-822096237}
+  \github{self1am}
+  \homepage{self1am.github.io/HanafeMira}
+}
+
+\makecvheader
+
+\columnratio{0.6}
+\begin{paracol}{2}
+
+\cvsection{Summary}
+
+Software Engineer with strong expertise in Java, cross-platform mobile development, and secure system design. I build production-ready wallet and KYC solutions, work deeply with native Android/iOS internals, and create private scoped packages that streamline security, document scanning, and CI/CD workflows. Skilled in designing clean architectures, solving complex native-level issues, and ensuring app integrity through tamper-proofing and MASVS-aligned checks. With additional exposure to IoT and distributed systems from academic and research work, I bring a practical and research-driven mindset to high-complexity engineering challenges.
+
+
+
+\cvsection{Education}
+
+\cvevent{B.Sc.(hons)\ in Information Systems}{University of Colombo, School of Computing}{Jun 2022 -- Present}{}
+\begin{itemize}
+\item Final year of academia
+\end{itemize}
+
+% \divider
+
+% \cvevent{G.C.E. Advanced Level}{Ak/ M.C.C. (National School)}{2012 -- 2020}{}
+
+\cvsection{Experience}
+
+\cvevent{Software Engineer- (Undergraduate Trainee)}{Scienter Technologies PTE}{Nov 2024 -- Present}{Colombo, Sri Lanka}
+\begin{itemize}
+    \item Developer for secure wallet and fintech mobile applications, working across Java/Kotlin, Swift/Objective-C, and React Native to deliver high-reliability cross-platform solutions.
+    \item Designed and maintained private scoped packages for ML Kit–based NIC/passport scanning, OCR extraction, face detection, and liveness verification used in production KYC pipelines.
+    \item Built a FastAPI-based face-comparison backend to match live selfies with document photos, completing a fully automated, tamper-resilient KYC verification flow.
+    \item Developed a MASVS-aligned tamper-proofing engine with native checks (root/jailbreak, Frida, emulator, ADB, devmode, signature integrity) for Android and iOS.
+    \item Architected and implemented a Flutter-based loan recovery module from scratch, setting team-adopted standards for modularity, maintainability, and clean design patterns.
+    \item Created a custom app signature generation algorithm ensuring consistent, version-specific signatures across platforms, strengthening MASVS-R2 compliance.
+    \item Built CI/CD pipelines using GitHub Actions to automate Android/iOS builds, signing, and workflow dispatches for future app-store release automation.
+    \item Resolved complex native-level issues, contributed to open-source libraries (including PRs for core React Native ecosystem packages), and improved internal mobile engineering standards.
+\end{itemize}
+
+% \divider
+
+% \cvevent{Freelance Developer}{}{Dec 2022 -- Present}{}
+% \begin{itemize}
+%     \item Developed a strong portfolio of providing software solutions quickly and efficiently, with a variety of technologies including, Next.js, Flutter, Firebase, MongoDB, Node.js, FastApi, etc.
+% \end{itemize}
+
+\cvsection{Projects}
+
+\cvevent{Federated Learning Defence Framework}{Secure & Cognitive-Aware FL | Python, TensorFlow, Flower, \\ AWS/Azure/OCI}{Mar 2024 -- Present}{}
+\begin{itemize}
+    \item Designed and implemented a \textbf{tamper-resilient Federated Learning defence} using cognitive frameworks (OODA, MAPE-K) to detect malicious client updates.
+    \item Built a scalable FL pipeline using TensorFlow + Flower, deployed across distributed cloud VMs (AWS, Azure, OCI).
+    \item Developed a model-agnostic anomaly detector compatible with any deep learning task; open-sourced the defence framework.
+\end{itemize}
+
+\divider
+
+\cvevent{KYC Document \& Face Verification Pipeline}{ML Kit + FastAPI + Native Bridging | Android/iOS, Python}{Nov 2024 -- Present}{}
+\begin{itemize}
+    \item Built secure NIC/passport scanning with \textbf{OCR, face detection, liveness verification}, and document fraud detection using Google ML Kit.
+    \item Created a \textbf{FastAPI face-comparison service} matching live selfies against document photos for automated KYC validation.
+    \item Developed multiple \textbf{private scoped GitHub/NPM packages} integrating native Android (Kotlin/Java) and iOS (Swift/Obj-C) into React Native workflows.
+\end{itemize}
+
+\divider
+
+\cvevent{Wallet App}{Secure Mobile Wallet | React Native, Java/Kotlin, Swift}{Dec 2024 -- Present}{}
+\begin{itemize}
+    \item Built a security-hardened wallet app with encrypted storage, secure authentication, and tamper-aware logic.
+    \item Integrated robust state management and optimized API flows (Redux Thunk, REST).
+\end{itemize}
+
+\divider
+
+\cvevent{Virtual World Simulation}{Self-Driving Car Simulation | JS, Neural Networks, OSM}{Feb 2024 -- Jul 2024}{\href{https://self1am.github.io/VirtualWorld}{self1am.github.io/VirtualWorld}}
+\begin{itemize}
+    \item Built a traffic simulation ecosystem with a \textbf{custom neural network} for collision-free autonomous navigation.
+    \item Designed a graphical map editor and integrated OpenStreetMap data for real-world routing.
+\end{itemize}
+
+\divider
+
+% \cvevent{VectorSense}{Sparse Vector Recommender System | Python, Scikit-Learn, FastAPI, AWS EC2}{Feb 2025 -- Mar 2025}{}
+% \begin{itemize}
+%     \item Implemented a high-dimensional sparse recommender using cosine similarity and vectorized pipelines.
+%     \item Exposed the model via a low-latency FastAPI microservice deployed on EC2.
+% \end{itemize}
+
+% \divider
+
+\cvevent{ScrapeFlow}{Workflow-Based Web Scraping SaaS | Next.js, TailwindCSS, Prisma}{Dec 2024 -- Present}{\href{https://github.com/self1am/scrape-flow}{github.com/self1am/scrape-flow}}
+\begin{itemize}
+    \item Built a drag-and-drop workflow engine for generating automated scraping pipelines.
+    \item Implemented secure multi-provider authentication (email, Google, Facebook).
+\end{itemize}
+
+\divider
+
+% \cvevent{WellnessVision (Optional)}{Full-Stack Health Platform | React.js, Vite, Java/SpringBoot}{Jun 2024 -- Dec 2024}{}
+% \begin{itemize}
+%     \item Developed event booking, consultation management, and resource-sharing features for health professionals.
+% \end{itemize}
+
+\switchcolumn
+
+\cvsection{Skills}
+
+\begin{itemize}
+    \item Mobile & Frontend
+\end{itemize}
+\cvtag{React Native}\cvtag{Flutter}\cvtag{React.js}
+\cvtag{Next.js}\cvtag{TypeScript}\cvtag{TailwindCSS}
+\cvtag{Native Modules}\cvtag{Flutter/Dart}\cvtag{React Native}\cvtag{Bloc}\cvtag{Redux}
+\divider
+
+\begin{itemize}
+    \item Backend & APIs
+\end{itemize}
+\cvtag{FastAPI}\cvtag{Spring Boot}\cvtag{Node.js}
+\cvtag{PostgreSQL}\cvtag{MongoDB}\cvtag{Firebase}
+\cvtag{Prisma}\cvtag{Convex}\cvtag{REST}\cvtag{GraphQL}\\
+\divider
+
+\begin{itemize}
+    \item AI / Machine Learning
+\end{itemize}
+\cvtag{Python}\cvtag{TensorFlow}\cvtag{PyTorch}
+\cvtag{Scikit-learn}\cvtag{Pandas}\cvtag{NumPy}
+\cvtag{TensorFlow Lite}
+\cvtag{Model Optimization}\cvtag{Real-Time Inference}
+\divider
+
+\begin{itemize}
+    \item Tools & DevOps
+\end{itemize}
+\cvtag{Git}\cvtag{GitHub}\cvtag{AWS}
+\cvtag{CI/CD}\cvtag{Docker}\cvtag{NPM Scoped Packages}
+\cvtag{Firebase Tools}\cvtag{App Center}
+
+\cvsection{Certifications}
+
+\cvachievement{\faCertificate}{Software Engineer}{HackerRank.com}
+\cvachievement{\faCertificate}{Software Engineer Intern}{HackerRank.com}
+\cvachievement{\faCertificate}{Java}{HackerRank.com}
+\cvachievement{\faCertificate}{SQL}{HackerRank.com}
+\cvachievement{\faCertificate}{C\#}{EC-Council.com}
+\cvachievement{\faCertificate}{TypeScript}{EC-Council.com}
+\cvachievement{\faCertificate}{Python}{EC-Council.com}
+\cvachievement{\faCertificate}{Deep Learning Specialization}{Coursera (DeepLearning.ai)}
+
+
+\cvsection{Academic Research}
+
+\cvachievement{\faBook}{Literature Review: Defences against Model Poisoning Attacks in Federated Learning}{Conducted an in-depth review of existing methods for detecting and mitigating poisoning attacks in Federated Learning, identifying gaps in robustness, interpretability, and scalable defense mechanisms.}
+
+\divider
+
+\cvachievement{\faFlask}{Ongoing Research: Cognitive Defence Strategies in Federated Learning}{Developing a novel, cognitively inspired framework (OODA \& MAPE-K loops) to detect malicious client updates and enhance tamper-resilience in decentralized AI systems. Implemented a scalable FL pipeline using TensorFlow and Flower, model-agnostic and deployable on cloud infrastructure (AWS/Azure/OCI).}
+
+
+% \cvsection{Key Achievements}
+% \cvachievement{\faTrophy}{Finalist at Creative Writing}{National Level English Language Day competition}
+% \divider
+% \\
+% \cvachievement{\faTrophy}{Finalist at MADHACK 3.0}{Mobile Application Development Hackathon 2024}
+% \divider
+% \\
+% \cvachievement{\faTrophy}{Finalist at Oratory Impromptu}{Top 10 at Learnium International Writing Competitions Island-wide}
+
+\switchcolumn
+% \cvsection{Additional Skills \& Experiences}
+% \cvtag{Blog Writing}\cvtag{Physics Tutoring}\\
+% \cvtag{Web Design and Development}\\
+% \cvtag{Graphic Designing}
+
+\switchcolumn
+
+\cvsection{Volunteering}
+\cvevent{President}{Computer Science Society of University of Colombo}{Apr 2025 -- Present}{}
+% \divider
+\cvevent{Organizing Committee Member}{APAN 56 Datathon}{Aug 2023}{}
+% \divider
+\cvevent{Member}{IEEE Student Branch | UCSC}{}{}
+% \divider
+\cvevent{Member}{ACM Student Chapter | UCSC}{}{}
+
+% \switchcolumn
+
+\cvsection{Passions}
+\cvtag{Quantum Machine Learning}\\
+\cvtag{Relativistic Physics}
+\cvtag{Linear Algebra}\\
+\cvtag{Blockchain Technology}\\
+\cvtag{Artificial Intelligence}\\
+\cvtag{Quantum Field Theory}
+
+
+% \switchcolumn
+
+\cvsection{Referees}
+\cvref{Dr. Roshan Rajapakse}{Lecturer, University of Colombo School of Computing}{rnr@ucsc.cmb.ac.lk}
+\divider
+% \cvref{Dr. Kasun Gunawardana}{Lecturer, University of Colombo School of Computing}{kgg@ucsc.cmb.ac.lk}
+
+\end{paracol}
+\end{document}

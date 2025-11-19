@@ -1,0 +1,298 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+\usepackage{paracol}
+
+\ifxetexorluatex
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\begin{document}
+\name{Hanafe Mira}
+\tagline{Software Engineer | Full-Stack | AI/ML | Mobile App}
+\photoR{2.8cm}{hanafe}
+
+\personalinfo{
+  \email{miraahanafee@gmail.com}
+  \phone{+94 76 381 1834}
+  \location{Colombo, Sri Lanka}
+  \linkedin{hanafe-mira-822096237}
+  \github{self1am}
+  \homepage{self1am.github.io/HanafeMira}
+}
+
+\makecvheader
+
+\columnratio{0.6}
+\begin{paracol}{2}
+
+\cvsection{Summary}
+Experienced full-stack engineer with strong proficiency in Next.js, React.js, and Tailwind CSS, having delivered multiple responsive, mobile-first client projects. Adept at building scalable e-commerce platforms, RESTful services, and modern UI/UX workflows. Passionate about clean architecture, AWS deployment, and working in fast-paced startup environments.
+
+
+\cvsection{Education}
+
+\cvevent{B.Sc.(hons)\ in Information Systems}{University of Colombo, School of Computing}{Jun 2022 -- Present}{}
+% \begin{itemize}
+% \item Final year of academia
+% \end{itemize}
+
+% \divider
+
+% \cvevent{G.C.E. Advanced Level}{Ak/ M.C.C. (National School)}{2012 -- 2020}{}
+
+\cvsection{Experience}
+
+\cvevent{Software Engineer Intern}{Scienter Technologies PTE}{Nov 2024 -- Present}{Colombo, Sri Lanka}
+\begin{itemize}
+    \item Developed scalable cross-platform applications, specializing in secure wallet and fin-tech mobile apps with robust authentication and encryption.
+    \item Implemented efficient state management and implemented Redux Thunk for handling asynchronous API fetching.
+\end{itemize}
+\divider
+
+\cvevent{Freelance Developer}{}{Dec 2022 -- Present}{}
+\begin{itemize}
+    \item Delivered client projects using Next.js and Tailwind CSS for modern UI and NestJS or FastApi for a fast, scalable backend, including e-commerce websites and SaaS dashboards with responsive UI and server-side rendering.\\
+    \cvtag{\href{https://myskinic.com.au}{MySkinic}}
+    \cvtag{\href{https://uptradie.com.au}{UpTradie}}
+    \cvtag{\href{https://bannah-ui.vercel.app}{Bannah Perfumery}}
+\end{itemize}
+
+\cvsection{Projects}
+
+\cvevent{Wallet App}{Secure Mobile Wallet | React Native, Redux, Fastlane, REST APIs}{Dec 2024 -- Present}{}
+\begin{itemize}
+\item Built a feature-rich mobile wallet with encrypted transactions and biometric authentication.
+\item Integrated in-app payments and deep links for both iOS and Android.
+\item Used Redux and Context API for scalable state management across screens.
+\item Managed build and deployment using Fastlane for both Play Store and App Store.
+\end{itemize}
+
+
+\divider
+
+\cvevent{ScrapeFlow}{AI powered WebScraping SAAS | Next.js, TailwindCSS, Prizma, react-flow}{Dec 2024 -- Present}{\href{https://github.com/self1am/scrape-flow}{github.com/self1am/scrape-flow}}
+\begin{itemize}
+\item Developed a \textbf{drag-and-drop} UI for \textbf{workflow automation} with and \textbf{end-to-end data pieline}.
+\item Implemented secure \textbf{authentication} via multiple modes (email, google, facebook).
+\end{itemize}
+
+\divider
+
+\cvevent{Streaker}{Habit Tracker App | React Native, Redux, AsyncStorage, TypeScript}{Apr 2025 -- May 2025}{}
+\begin{itemize}
+\item Designed and developed a minimalist habit tracker focused on streaks and tiny daily goals, inspired by Atomic Habits and Mini Habits.
+\item Implemented streak counters, daily reminders, and habit check-ins with persistent storage using AsyncStorage.
+\item Used Redux for state management across habits, streak logs, and analytics dashboard.
+\item Designed an intuitive mobile UX with motivational nudges and habit identity reinforcement.
+\item Integrated local notifications and progress graphs; prepared for app store deployment with Fastlane.
+\end{itemize}
+
+\divider
+
+\cvevent{Virtual World Simulation}{A traffic simulation with each car with its own brain}{Feb 2024 -- Jul 2024}{\href{https://self1am.github.io/VirtualWorld}{self1am.github.io/VirtualWorld}}
+\begin{itemize}
+\item Developed a node-based graphical drawing UI for road and building creation.
+\item Built a neural network from scratch to train self-driving cars for collision avoidance.
+\item Integrated OpenStreetMap data for real-world navigation with a manual control mode for a game-like experience.
+\end{itemize}
+
+\divider
+
+% \cvevent{Self-driving Car Simulation}{Simulation of cars using machine learning to maneuver traffic}{Feb 2024 -- Mar 2024}{self1am.github.io/VirtualWorld}
+% \begin{itemize}
+% \item Built a neural network from scratch with backpropagation to train the cars to avoid collision.
+% \item Applied Dijkstra's Algorithm to find the shortest path between any two points.
+% \item Implemented game mode.
+% \item Integrated with the aforementioned Virtual World.
+% \end{itemize}
+
+% \divider
+
+
+
+% \cvevent{VectorSense}{Sparse Vector ML for Recommendation | Python, Scikit-learn, FastAPI}{Feb 2025 -- Mar 2025}{}
+% \begin{itemize}
+% \item Implemented a sparse matrix-based recommender system using cosine similarity on high-dimensional data (NLP and user actions).
+% \item Deployed as a scalable REST API with real-time response using FastAPI and hosted on AWS EC2.
+% \item Benchmarked latency and memory usage to simulate edge compatibility and production readiness.
+% \end{itemize}
+
+% \divider
+
+\cvevent{WellnessVision}{Full-Stack Web App | React.js, Vite, Java/SpringBoot}{Jun 2024 -- Dec 2024}{}
+\begin{itemize}
+\item A platform connecting health professionals and users, featuring event management, consultation booking, and health-related resources.
+\item Integrated seamless event handling and Streamlined the process of hall bookings.
+\end{itemize}
+
+\divider
+
+% \cvevent{iQube}{E-learning platform tailored for Advanced Level Students}{Jun 2023 -- May 2024}{}
+% \begin{itemize}
+% \item Built an e-learning platform allowing students to purchase courses and model papers.
+% \item Enabled tutors to create and sell content on the platform.
+% \end{itemize}
+
+% \divider
+
+% \cvevent{Quantum AI model}{Simple Hybrid Neural Network | Python, Pennylane, QisKit, SciKitLearn}{}{}
+% \begin{itemize}
+% \item Developed a simple hybrid Quantum AI model, integrating classical and quantum neural networks for enhanced learning.
+% \end{itemize}
+
+% \divider
+
+% \cvevent{ByteTrack}{Custom Version Control System | Python}{}{\href{https://github.com/self1am/git-python}{github.com/self1am/git-python}}
+% \begin{itemize}
+% \item Implemented commit tracking, branching, and merging for seamless code management to mimic git architecture.
+% \end{itemize}
+
+
+\switchcolumn
+
+\cvsection{Skills}
+
+\begin{itemize}
+    \item Mobile App Development
+\end{itemize}
+\cvtag{React Native}\cvtag{Redux}\cvtag{Context API}\cvtag{React Navigation}
+\cvtag{TypeScript}\cvtag{JavaScript}\cvtag{Axios}\cvtag{Deep Linking}
+\cvtag{Fastlane}\cvtag{Jest}\cvtag{Firebase}\cvtag{AWS}\\
+\divider
+
+\begin{itemize}
+    \item Native & Platform Integration
+\end{itemize}
+\cvtag{Swift}\cvtag{Kotlin}\cvtag{Java}
+\cvtag{Objective-C}\cvtag{Play Store}\cvtag{App Store}\\
+\divider
+
+\begin{itemize}
+    \item Backend
+\end{itemize}
+\cvtag{SpringBoot/Java}\cvtag{C/C++}\cvtag{C\#}\cvtag{Node.js}
+\cvtag{Express.js}\cvtag{PHP}\cvtag{Python}
+\cvtag{R}\cvtag{MongoDB}\cvtag{MySQL}\cvtag{PostgreSQL}\cvtag{Firebase}
+\cvtag{Prizma}\\
+\divider
+
+\begin{itemize}
+    \item UI & Testing
+\end{itemize}
+\cvtag{StyleSheet}\cvtag{Flexbox}\cvtag{Responsive UI}
+\cvtag{Jest}\cvtag{Snapshot Testing}\\
+\cvtag{React Native Testing Library}
+
+
+\cvsection{Certifications}
+\cvachievement{\faCertificate}{Software Engineer}{HackerRank.com}
+\divider
+\\
+\cvachievement{\faCertificate}{Software Engineer Intern}{HackerRank.com}
+\divider
+\\
+\cvachievement{\faCertificate}{Math for Machine Learning}{W3Schools.com}
+\divider
+\\
+\cvachievement{\faCertificate}{Java}{HackerRank.com}
+\divider
+\\
+\cvachievement{\faCertificate}{SQL}{HackerRank.com}
+\divider
+\\
+\cvachievement{\faCertificate}{Introduction to AWS Solutions}{W3Schools.com}
+\divider
+\\
+\cvachievement{\faCertificate}{C\#}{EC-Council.com}
+\divider
+\\
+\cvachievement{\faCertificate}{TypeScript}{EC-Council.com}
+\divider
+\\
+\cvachievement{\faCertificate}{Python}{EC-Council.com}
+
+\cvsection{Academic Research}
+
+\cvachievement{\faBook}{Literature Review: Defences against Model Poisoning Attacks in Federated Learning}{Completed an in-depth review of existing methods to detect and mitigate poisoning attacks, highlighting current gaps and limitations in robustness and interpretability.}
+
+\divider
+
+\cvachievement{\faFlask}{Ongoing Research: Cognitive Defence Strategies in Federated Learning}{Currently in the proposal phase of a full-scale research project aiming to develop novel, cognitively inspired mechanisms to identify and respond to poisoning attempts in decentralized AI systems.}
+
+
+% \cvsection{Key Achievements}
+% \cvachievement{\faTrophy}{Finalist at Creative Writing}{National Level English Language Day competition}
+% \divider
+% \\
+% \cvachievement{\faTrophy}{Finalist at MADHACK 3.0}{Mobile Application Development Hackathon 2024}
+% \divider
+% \\
+% \cvachievement{\faTrophy}{Finalist at Oratory Impromptu}{Top 10 at Learnium International Writing Competitions Island-wide}
+
+\switchcolumn
+% \cvsection{Additional Skills \& Experiences}
+% \cvtag{Blog Writing}\cvtag{Physics Tutoring}\\
+% \cvtag{Web Design and Development}\\
+% \cvtag{Graphic Designing}
+
+\switchcolumn
+
+\cvsection{Volunteering}
+\cvevent{Vice President}{Computer Science Society of University of Colombo}{Dec 2023 -- Present}{}
+% \divider
+\cvevent{Organizing Committee Member}{APAN 56 Datathon}{Aug 2023}{}
+% \divider
+\cvevent{Member}{IEEE Student Branch | UCSC}{}{}
+% \divider
+\cvevent{Member}{ACM Student Chapter | UCSC}{}{}
+% \divider
+\cvevent{President}{English Literary Association | Ak/ M.C.C (N/S)}{2015 - 2016}{}{}
+
+% \switchcolumn
+
+\cvsection{Passions}
+\cvtag{Quantum Machine Learning}\\
+\cvtag{Relativistic Physics}
+\cvtag{Linear Algebra}\\
+\cvtag{Blockchain Technology}\\
+\cvtag{Artificial Intelligence}\\
+\cvtag{Quantum Field Theory}
+
+
+% \switchcolumn
+
+\cvsection{Referees}
+\cvref{Dr. Roshan Rajapakse}{Lecturer, University of Colombo School of Computing}{rnr@ucsc.cmb.ac.lk}
+\divider
+% \cvref{Dr. Kasun Gunawardana}{Lecturer, University of Colombo School of Computing}{kgg@ucsc.cmb.ac.lk}
+
+\end{paracol}
+\end{document}

@@ -1,0 +1,247 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+\usepackage{paracol}
+
+\ifxetexorluatex
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\begin{document}
+\name{Hanafe Mira}
+\tagline{Software Engineering | Full-Stack | AI/ML | Mobile App}
+\photoR{2.8cm}{hanafe}
+
+\personalinfo{
+  \email{miraahanafee@gmail.com}
+  \phone{+94 76 381 1834}
+  \location{Colombo, Sri Lanka}
+  \linkedin{hanafe-mira-822096237}
+  \github{self1am}
+  \homepage{self1am.github.io/HanafeMira}
+}
+
+\makecvheader
+
+\columnratio{0.6}
+\begin{paracol}{2}
+
+\cvsection{Summary}
+I am an Information Systems Undergraduate and an up and coming Software Engineer with multiple successful projects using a variety of technologies. My range of skills aligns well with my interest in Full-Stack development, Artificial Intelligence, Machine Learning, and Mobile Application Development. I am looking forward to developing my career by gaining good industry expertise.
+
+\cvsection{Education}
+
+\cvevent{B.Sc.\ in Information Systems}{University of Colombo, School of Computing}{Jun 2022 -- Present}{}
+\begin{itemize}
+\item At present, in the 3rd year of academia
+\end{itemize}
+
+\divider
+
+\cvevent{G.C.E. Advanced Level}{Ak/ M.C.C. (National School)}{2012 -- 2020}{}
+
+\cvsection{Projects}
+
+\cvevent{Virtual World}{Graphical Interpretation of roads with traffic in bird's eye view}{Feb 2024 -- Jul 2024}{self1am.github.io/VirtualWorld/world}
+\begin{itemize}
+\item Developed a user interface for road and building creation using node-based graph drawing.
+\item Built a neural network from scratch in JavaScript to train self-driven cars to avoid collisions.
+\item Integrated OpenStreetMap data for real-world map generation, enabling car navigation.
+\item Added a manual control mode for a game-like experience.
+\end{itemize}
+
+\divider
+
+\cvevent{Self-driving Car Simulation}{Simulation of cars using machine learning to maneuver traffic}{Feb 2024 -- Mar 2024}{self1am.github.io/VirtualWorld}
+\begin{itemize}
+\item Built a neural network from scratch with backpropagation to train the cars to avoid collision.
+\item Applied Dijkstra's Algorithm to find the shortest path between any two points.
+\item Implemented game mode.
+\item Integrated with the aforementioned Virtual World.
+\end{itemize}
+
+\divider
+
+\cvevent{Financial Fraud Detection}{Mini Machine Learning Project}{}{https://github.com/self1am/FinancialFraudDetection}
+\begin{itemize}
+\item Developed a User Interface to upload Financial Data.
+\item Used TensorFlow.js in supervised learning to check for fraudulent transactions.
+\end{itemize}
+
+\divider
+
+\cvevent{WellnessVision}{An integrated platform focused on mental health and medical awareness.}{Jun 2024 -- Present}{}
+\begin{itemize}
+\item Implemented multiple functionalities to enhance user experience and platform effectiveness.
+\item Integrated seamless event handling.
+\item Streamlined the process of hall bookings.
+\end{itemize}
+
+\divider
+
+\cvevent{iQube}{E-learning platform tailored for Advanced Level Students}{Jun 2023 -- May 2024}{}
+\begin{itemize}
+\item Built an e-learning platform allowing students to purchase courses and model papers.
+\item Enabled tutors to create and sell content on the platform.
+\end{itemize}
+
+\divider
+
+\cvevent{Jobbed}{MADHack 3.0 First Round}{Jun 2024}{}
+\begin{itemize}
+\item Developed an app for job searching.
+\item Used Flutter with Dart to successfully develop the mobile app with cross-platform compatibility. Qualified to the final rounds.
+\end{itemize}
+
+\divider
+
+\cvevent{Racing Game}{Simple Mobile Game to race cars}{Mar 2024 -- Present}{\href{https://github.com/self1am/CordovaApp}{github.com/self1am/CordovaApp}}
+\begin{itemize}
+\item Used CORDOVA framework to build the app.
+\item Developed the graphical interface using JavaScript canvas.
+\end{itemize}
+
+
+\switchcolumn
+
+\cvsection{Skills}
+\begin{itemize}
+    \item Frontend
+\end{itemize}
+\cvtag{HTML}\cvtag{CSS}\cvtag{JavaScript}\\
+\cvtag{TypeScript}\cvtag{React.js}\cvtag{Bootstrap}\\
+\cvtag{JQuery}\\
+\divider
+
+\begin{itemize}
+    \item Backend
+\end{itemize}
+\cvtag{SpringBoot/Java}\cvtag{C/C++}\cvtag{Node.js}\\
+\cvtag{Express.js}\cvtag{C\#}\cvtag{PHP}\cvtag{Python}\\
+\cvtag{R}\cvtag{MongoDB}\cvtag{MySQL}\cvtag{PostgreSQL}\\
+\divider
+
+\begin{itemize}
+    \item Mobile App Development
+\end{itemize}
+\cvtag{React Native}\cvtag{CORDOVA}\cvtag{Kotlin}\\
+\cvtag{Flutter}\\
+\divider
+
+\begin{itemize}
+    \item Artificial Intelligence / Machine Learning
+\end{itemize}
+\medskip
+\cvtag{TensorFlow}\cvtag{PyTorch}\cvtag{Brain.js}\\
+\divider
+
+\begin{itemize}
+    \item Platforms
+\end{itemize}
+\cvtag{MacOS}\cvtag{Linux}\cvtag{Windows}\\
+\divider
+
+\begin{itemize}
+    \item Other
+\end{itemize}
+\cvtag{AWS}\cvtag{Git/GitHub}\\
+
+\cvsection{Certifications}
+\cvachievement{\faCertificate}{Software Engineer Intern}{HackerRank.com}
+\divider
+\\
+\cvachievement{\faCertificate}{Math for Machine Learning}{W3Schools.com}
+\divider
+\\
+\cvachievement{\faCertificate}{Java}{HackerRank.com}
+\divider
+\\
+\cvachievement{\faCertificate}{SQL}{HackerRank.com}
+\divider
+\\
+\cvachievement{\faCertificate}{Introduction to AWS Solutions}{W3Schools.com}
+\divider
+\\
+\cvachievement{\faCertificate}{Java}{HackerRank.com}
+\divider
+\\
+\cvachievement{\faCertificate}{C\#}{EC-Council.com}
+\divider
+\\
+\cvachievement{\faCertificate}{TypeScript}{EC-Council.com}
+\divider
+\\
+\cvachievement{\faCertificate}{Python}{EC-Council.com}
+
+\cvsection{Key Achievements}
+\cvachievement{\faTrophy}{Finalist at Creative Writing}{National Level English Language Day competition}
+\divider
+\\
+\cvachievement{\faTrophy}{Finalist at MADHACK 3.0}{Mobile Application Development Hackathon 2024}
+\divider
+\\
+\cvachievement{\faTrophy}{Finalist at Oratory Impromptu}{Top 10 at Learnium International Writing Competitions Island-wide}
+
+\switchcolumn
+\cvsection{Additional Skills \& Experiences}
+\cvtag{Blog Writing}\cvtag{Physics Tutoring}\\
+\cvtag{Web Design and Development}\\
+\cvtag{Graphic Designing}
+
+\switchcolumn
+
+\cvsection{Volunteering}
+\cvevent{Vice President}{Computer Science Society of University of Colombo}{Dec 2023 -- Present}{}
+\divider
+\cvevent{Organizing Committee Member}{APAN 56 Datathon}{Aug 2023}{}
+\divider
+\cvevent{Member}{IEEE Student Branch | UCSC}{}{}
+\divider
+\cvevent{Member}{ACM Student Chapter | UCSC}{}{}
+\divider
+\cvevent{President}{English Literary Association | Ak/ M.C.C (N/S)}{2015 - 2016}{}{}
+
+\cvsection{Passions}
+\cvtag{Quantum Machine Learning}\\
+\cvtag{Relativistic Physics}
+\cvtag{Linear Algebra}\\
+\cvtag{Blockchain Technology}\\
+\cvtag{Quantum Field Theory}\\
+\cvtag{Artificial Intelligence}
+
+\switchcolumn
+
+\cvsection{Referees}
+\cvref{Dr. Roshan Rajapakse}{Lecturer, University of Colombo School of Computing}{rnr@ucsc.cmb.ac.lk}
+\divider
+\cvref{Dr. Kasun Gunawardana}{Lecturer, University of Colombo School of Computing}{kgg@ucsc.cmb.ac.lk}
+
+\end{paracol}
+\end{document}
